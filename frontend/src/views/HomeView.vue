@@ -21,7 +21,7 @@ export default {
 .home
   border-radius: 5px
   background: #E5E6ED
-  margin: 6%
+  margin: 3% 6% 0 6%
   height: 100vh
   overflow: hidden
   h1
@@ -29,6 +29,6 @@ export default {
     font-size: 75px
     color: #131312
   &__content
-    margin: 100px 12% 0 12%
+    margin: 150px 12% 0 12%
     height: 100vh
 </style>

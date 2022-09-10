@@ -1,7 +1,7 @@
 <template>
 <div class="highlighted-article-container">
 <div class="section-left">
-    <img class="section-img" src="https://i.picsum.photos/id/718/536/354.jpg?hmac=h5RFx_Qwps-hOPBUGQzU3Kk9XXLJuvxbbWMEBCZYwPE" alt="lorem ipsum image">
+    <div class="section-img"></div>
 </div>
 <div class="section-right">
     <span class="section-date">September 10. 2022</span>
@@ -21,13 +21,12 @@ export default {
     .highlighted-article-container {
         display: flex;
         justify-content: center;
-        height: 350px;
     }
 
     .section-left {
         width:55%;
-        border: 1px solid #aab3c8;
         border-radius: 5px;
+        min-height: 350px;
     }
 
     .section-right {
@@ -40,11 +39,13 @@ export default {
     .section-img {
         height: 100%;
         width:100%;
+        border-radius: 5px;
+        background-image: linear-gradient(to right top, #f47173, #ef6783, #e46093, #d45ea3, #bf5fb2, #b35fbb, #a45fc3, #9261cb, #8b60d2, #835fda, #795ee1, #6c5ee9);
     }
 
     .section-right {
         text-align: left;
-        padding-left: 20px;
+        padding-left: 40px;
     }
 
     .section-date {
@@ -54,16 +55,25 @@ export default {
     }
 
     .section-title {
-        font-size: 36px;
+        font-size: 45px;
         font-weight: 600;
-        max-width: 70%;
+        max-width: 80%;
         margin: 0;
     }
 
     .section-content {
-        max-width: 70%;
+        max-width: 80%;
         font-size: 14px;
         padding-bottom: 10px;
+    }
+
+    @media only screen and (max-width: 600px){
+        .highlighted-article-container {
+            flex-direction: column;
+        }
+        .section-left {
+            width: 100%;
+        }
     }
 
 </style>
