@@ -21,11 +21,13 @@ export default {
     .highlighted-article-container {
         display: flex;
         justify-content: center;
-        height: 250px;
+        height: 350px;
     }
 
     .section-left {
-        width:60%;
+        width:55%;
+        border: 1px solid #aab3c8;
+        border-radius: 5px;
     }
 
     .section-right {
@@ -38,7 +40,6 @@ export default {
     .section-img {
         height: 100%;
         width:100%;
-        border-radius: 5px;
     }
 
     .section-right {
@@ -55,12 +56,12 @@ export default {
     .section-title {
         font-size: 36px;
         font-weight: 600;
-        max-width: 50%;
+        max-width: 70%;
         margin: 0;
     }
 
     .section-content {
-        max-width: 50%;
+        max-width: 70%;
         font-size: 14px;
         padding-bottom: 10px;
     }
