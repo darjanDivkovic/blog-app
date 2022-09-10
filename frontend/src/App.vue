@@ -9,16 +9,18 @@
 </template>
 
 <style lang="scss">
+html, body {
+  margin: 0; 
+  padding: 0;
+}
 #app {
+  background-image: linear-gradient(to right, #b7bed0, #b1b8cc, #aab3c8, #a4adc4, #9ea8c0);
+  height: 100vh;
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  overflow: hidden;
 }
 
 nav {
-  padding: 30px;
 
   a {
     font-weight: bold;
