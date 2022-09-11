@@ -2,17 +2,18 @@
   <div class="home">
     <div class="home__content">
       <h1 class='home__header'>The Blog</h1>
-      <HighlightedArticle/>
+      <Article/>
+
     </div>
   </div>
 </template>
 
 <script>
-import HighlightedArticle from '@/components/HighlightedArticle'
+import Article from '@/components/Article'
 export default {
   name: 'HomeView',
   components: {
-    HighlightedArticle
+    Article
   }
 }
 </script>
