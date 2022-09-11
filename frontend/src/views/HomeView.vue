@@ -3,17 +3,20 @@
     <div class="home__content">
       <h1 class='home__header'>The Blog</h1>
       <Article/>
-
+      <ArticleGrid/>
     </div>
   </div>
 </template>
 
 <script>
-import Article from '@/components/Article'
+import Article from '@/components/Article.vue'
+import ArticleGrid from '@/components/ArticleGrid.vue'
+
 export default {
   name: 'HomeView',
   components: {
-    Article
+    Article,
+    ArticleGrid,
   }
 }
 </script>
