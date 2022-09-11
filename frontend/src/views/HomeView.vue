@@ -27,12 +27,13 @@ export default {
   background: #E5E6ED
   margin: 3% 6% 0 6%
   height: 100vh
-  overflow: hidden
+  overflow-y: auto
   h1
     font-family: 'Poppins'
     font-size: 75px
     color: #131312
   &__content
-    margin: 150px 12% 0 12%
+    margin: 150px 12% 100px 12%
     height: 100vh
+    min-height: max-content
 </style>

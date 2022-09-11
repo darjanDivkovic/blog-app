@@ -1,6 +1,6 @@
 <template>
 <div class='container'>
-    <Article v-for="n in count" :key="n"/>
+    <Article v-for="n in count" :key="n" :isMini="true"/>
 </div>
 </template>
 

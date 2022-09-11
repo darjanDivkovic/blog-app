@@ -1,9 +1,9 @@
 <template>
-<div class="container">
+<div class="container" :class="{mini: isMini}">
     <div class="container__left">
         <div class="img"></div>
     </div>
-    <div class="container__right">
+    <div class="container__right" :class="{mini: isMini}">
         <span class="date">September 10. 2022</span>
         <span class="title">Tentang Creativity block pada UI Designer</span>
         <span class="content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
@@ -14,12 +14,18 @@
 <script>
 export default {
     name: 'Article',
+    props: ['isMini'],
 }
 </script>
 
 <style lang="sass" scoped>
 .container
   display: flex
+  flex-direction: row
+  &.mini
+    display: flex
+    border: 1px solid red
+    flex-direction: column
   &__left
     width:55%
     border-radius: 5px
@@ -35,6 +41,8 @@ export default {
     flex-direction: column
     justify-content: space-between
     padding-left: 40px
+    &.mini
+      width: 100%
     .date
       color: gray
       font-size: 12px
@@ -48,7 +56,8 @@ export default {
       max-width: 80%
       font-size: 14px
       padding-bottom: 10px
-@media (max-width: 600px) 
+
+  @media (max-width: 600px) 
   .container 
     flex-direction: column
     &__left 
