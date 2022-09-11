@@ -1,11 +1,11 @@
 <template>
 <div class="container" :class="{mini: isMini}">
-    <div class="container__left">
-        <div class="img"></div>
+    <div class="container__left" :class="{mini: isMini}">
+        <div class="img" :class="{mini: isMini}"></div>
     </div>
-    <div class="container__right" :class="{mini: isMini}">
+    <div class="container__right">
         <span class="date">September 10. 2022</span>
-        <span class="title">Tentang Creativity block pada UI Designer</span>
+        <span class="title" :class="{mini: isMini}">Tentang Creativity block pada UI Designer</span>
         <span class="content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
     </div>
 </div>
@@ -30,11 +30,15 @@ export default {
     width:55%
     border-radius: 5px
     min-height: 350px
+    &.mini
+        height: 175px
     .img
       height: 100%
       width:100%
       border-radius: 5px
       background-image: linear-gradient(to right top, #f47173, #ef6783, #e46093, #d45ea3, #bf5fb2, #b35fbb, #a45fc3, #9261cb, #8b60d2, #835fda, #795ee1, #6c5ee9)
+      &.mini
+        height: 50%
   &__right
     width:40%
     display: flex
