@@ -34,6 +34,6 @@ export default {
     color: #131312
   &__content
     margin: 150px 12% 100px 12%
-    height: 100vh
+    height: max-content
     min-height: max-content
 </style>
